@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;700&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="wrapper">
+                <h1 class="bold">Chat App</h1>
+            </div>
+        </header>
+        <section class="wrapper main">
+            <form action="chat.html">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter a username">
+                <label for="room">Room</label>
+                <div id="select-room">
+                    <select name="room" >
+                        <option value="0">-- Select --</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="csharp">C#</option>
+                        <option value="python">Python</option>
+                        <option value="django">Django</option>
+                        <option value="react">React</option>
+                        <option value="vue">Vue</option>
+                        <option value="socket">Socket.io</option>
+                        <option value="chatroom">Chat room</option>
+                    </select>
+                </div>
+                <input type="submit" class="submit-btn" value="ENTER CHAT">
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>
