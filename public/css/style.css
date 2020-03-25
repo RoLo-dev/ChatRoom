@@ -143,7 +143,7 @@ header .title h1{
 .chat-main #leftCol{
     width: 30%;
     border-radius: 7px;
-    padding: 8px;
+    padding: 8px 1rem;
     box-shadow: inset -3px -3px 4px rgba(255,255,255,1),
                 inset -3px -3px 7px rgba(255,255,255,0.5),
                 inset 2px 2px 4px rgba(255,255,255,0.1),
@@ -151,4 +151,19 @@ header .title h1{
 }
 .chat-main #rightCol{
     width: 68%;
+}
+#leftCol ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+#leftCol ul li:last-child{
+    margin-bottom: 0;
+}
+#leftCol ul li .col-menu{
+    display: flex;
+    align-items: center;
+    color: #8BBF9F;
+}
+.col-menu ion-icon{
+    margin-right: 5px;
 }
