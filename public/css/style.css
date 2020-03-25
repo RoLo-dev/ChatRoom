@@ -1,3 +1,4 @@
+/* UNIVERSAL STYLES */
 *{
     padding: 0;
     margin: 0;
@@ -21,22 +22,8 @@ html{
 .bold{
     font-weight: 700;
 }
-
-.container{
-    box-shadow: -3px -3px 8px rgba(255,255,255,1),
-                -3px -3px 13px rgba(255,255,255,0.5),
-                inset 3px 3px 8px rgba(255,255,255,0.1),
-                3px 3px 9px rgba(0,0,0,0.5);
-}
-.container,
-.box{
-    border-radius: 10px;
-    height: 500px;
-    width: 750px;
-}
-.container header,
-.box header{
-    padding-top: 1rem;
+header{
+    height: 70px;
 }
 header .title{
     display: flex;
@@ -45,10 +32,24 @@ header .title{
 }
 header .title ion-icon{
     font-size: 2rem;
-    margin-right: 10px;
+    margin-right: 7px;
 }
 header .title h1{
     letter-spacing: 1px;
+}
+
+/* STYLES FOR INDEX.HTML */
+.container{
+    width: 750px;
+}
+.container,
+.box{
+    border-radius: 10px;
+    height: 500px;
+    box-shadow: -3px -3px 8px rgba(255,255,255,1),
+                -3px -3px 13px rgba(255,255,255,0.5),
+                inset 3px 3px 8px rgba(255,255,255,0.1),
+                3px 3px 9px rgba(0,0,0,0.5);
 }
 .main form{
     margin-top: 5rem;
@@ -60,7 +61,7 @@ header .title h1{
     height: 2rem;
     font-family: 'Prompt', sans-serif;
     background-color: transparent;
-    border: 2px solid #8BBF9F;
+    border: 2px solid #242421;
     outline: 0;
     color: #242421;
     font-size: 0.9rem;
@@ -69,15 +70,15 @@ header .title h1{
     transition: all 0.4s ease-out;
 }
 .main form input::placeholder{
-    color: #8BBF9F;
+    color: #242421;
     transition: color 0.4s ease-out;
 }
 .main form #select-room{
     position: relative;
     background-color: transparent;
-    border: 2px solid #8BBF9F;
+    border: 2px solid #242421;
     outline: 0;
-    color: #8BBF9F;
+    color: #242421;
     font-family: 'Prompt', sans-serif;
     font-size: 0.9rem;
     width: 100%;
@@ -92,6 +93,7 @@ header .title h1{
 .submit-btn{
     color: #F2F3F7 !important;
     padding-left: 0 !important;
+    border: 2px solid #8BBF9F !important;
     background-color: #8BBF9F !important;
     font-weight: 700;
     letter-spacing: 1px;
@@ -108,15 +110,45 @@ header .title h1{
 }
 
 
-/* STYLES FOR THE CHAT */
+/* STYLES FOR CHAT.HTML */
 .box{
-    box-shadow: inset -3px -3px 8px rgba(255,255,255,1),
-                inset -3px -3px 13px rgba(255,255,255,0.5),
-                inset 3px 3px 8px rgba(255,255,255,0.1),
-                inset 3px 3px 9px rgba(0,0,0,0.5);
+    width: 875px;
 }
 .chat-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.chat-header .link .nav-link{
+    text-decoration: none;
+    color: #F2F3F7;
+    background-color: #8BBF9F;
+    border: 2px solid #8BBF9F;
+    padding: 0 13px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.5s ease-out;
+}
+.chat-header .link .nav-link:hover{
+    background-color: transparent;
+    color: #8BBF9F;
+    transition: all 0.2s ease-in;
+}
+
+.chat-main{
+    height: 325px;
+    display: flex;
+    justify-content: space-between;
+}
+.chat-main #leftCol{
+    width: 30%;
+    border-radius: 7px;
+    padding: 8px;
+    box-shadow: inset -3px -3px 4px rgba(255,255,255,1),
+                inset -3px -3px 7px rgba(255,255,255,0.5),
+                inset 2px 2px 4px rgba(255,255,255,0.1),
+                inset 2px 2px 7px rgba(0,0,0,0.5);
+}
+.chat-main #rightCol{
+    width: 68%;
 }
