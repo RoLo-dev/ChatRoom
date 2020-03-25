@@ -23,22 +23,31 @@ html{
 }
 
 .container{
-    /* background-color: #59344F; */
-    border-radius: 10px;
-    height: 500px;
-    width: 700px;
     box-shadow: -3px -3px 8px rgba(255,255,255,1),
                 -3px -3px 13px rgba(255,255,255,0.5),
                 inset 3px 3px 8px rgba(255,255,255,0.1),
                 3px 3px 9px rgba(0,0,0,0.5);
 }
-.container header{
-    padding-top: 1rem;
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.container,
+.box{
+    border-radius: 10px;
+    height: 500px;
+    width: 750px;
 }
-.container header h1{
+.container header,
+.box header{
+    padding-top: 1rem;
+}
+header .title{
+    display: flex;
+    align-items: center;
+    color: #8BBF9F;
+}
+header .title ion-icon{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+header .title h1{
     letter-spacing: 1px;
 }
 .main form{
@@ -57,9 +66,11 @@ html{
     font-size: 0.9rem;
     padding-left: 10px;
     border-radius: 8px;
+    transition: all 0.4s ease-out;
 }
 .main form input::placeholder{
     color: #8BBF9F;
+    transition: color 0.4s ease-out;
 }
 .main form #select-room{
     position: relative;
@@ -73,6 +84,10 @@ html{
     height: 2rem;
     margin-bottom: 2rem;
     border-radius: 8px;
+    transition: all 0.4s ease-out;
+}
+.main form #select-room:hover{
+    cursor: pointer;
 }
 .submit-btn{
     color: #F2F3F7 !important;
@@ -80,15 +95,28 @@ html{
     background-color: #8BBF9F !important;
     font-weight: 700;
     letter-spacing: 1px;
-    transition: all 0.5s ease-in;
 }
 .submit-btn:hover,
 .submit-btn:focus{
     cursor: pointer;
     color: #8BBF9F !important;
     background-color: transparent !important;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in;
 }
 .submit-btn:active{
     transform: scale(0.98);
+}
+
+
+/* STYLES FOR THE CHAT */
+.box{
+    box-shadow: inset -3px -3px 8px rgba(255,255,255,1),
+                inset -3px -3px 13px rgba(255,255,255,0.5),
+                inset 3px 3px 8px rgba(255,255,255,0.1),
+                inset 3px 3px 9px rgba(0,0,0,0.5);
+}
+.chat-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
