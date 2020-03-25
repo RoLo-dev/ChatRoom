@@ -7,12 +7,12 @@ html{
     font-size: 18px;
     font-family: 'Prompt', sans-serif;
     font-weight: 200;
-    color: #F5E0B7;
+    color: #242421;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #D1C7CF;
+    background-color: #F2F3F7;
 }
 .wrapper{
     width: 90%;
@@ -23,14 +23,17 @@ html{
 }
 
 .container{
-    background-color: #59344F;
+    /* background-color: #59344F; */
     border-radius: 10px;
     height: 500px;
     width: 700px;
+    box-shadow: -3px -3px 8px rgba(255,255,255,1),
+                -3px -3px 13px rgba(255,255,255,0.5),
+                inset 3px 3px 8px rgba(255,255,255,0.1),
+                3px 3px 9px rgba(0,0,0,0.5);
 }
 .container header{
-    background-color: #492B41;
-    padding: 1rem 0;
+    padding-top: 1rem;
     text-align: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -47,23 +50,23 @@ html{
 .main form input{
     height: 2rem;
     font-family: 'Prompt', sans-serif;
-    background-color: #492B41;
-    border: 0;
+    background-color: transparent;
+    border: 2px solid #8BBF9F;
     outline: 0;
-    color: #F5E0B7;
+    color: #242421;
     font-size: 0.9rem;
     padding-left: 10px;
     border-radius: 8px;
 }
 .main form input::placeholder{
-    color: #D1C7CF;
+    color: #8BBF9F;
 }
 .main form #select-room{
     position: relative;
-    background-color: #492B41;
+    background-color: transparent;
+    border: 2px solid #8BBF9F;
     outline: 0;
-    border: 0;
-    color: #D1C7CF;
+    color: #8BBF9F;
     font-family: 'Prompt', sans-serif;
     font-size: 0.9rem;
     width: 100%;
@@ -72,9 +75,9 @@ html{
     border-radius: 8px;
 }
 .submit-btn{
-    color: #492B41 !important;
+    color: #F2F3F7 !important;
     padding-left: 0 !important;
-    background-color: #D1C7CF !important;
+    background-color: #8BBF9F !important;
     font-weight: 700;
     letter-spacing: 1px;
     transition: all 0.5s ease-in;
@@ -82,8 +85,8 @@ html{
 .submit-btn:hover,
 .submit-btn:focus{
     cursor: pointer;
-    color: #F5E0B7 !important;
-    background-color: #492B41 !important;
+    color: #8BBF9F !important;
+    background-color: transparent !important;
     transition: all 0.2s ease-in;
 }
 .submit-btn:active{
