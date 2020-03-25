@@ -159,6 +159,8 @@ header .title h1{
 }
 .chat-main #rightCol{
     width: 72%;
+    overflow-y: scroll;
+    height: 100%;
 }
 #leftCol ul li{
     list-style: none;

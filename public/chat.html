@@ -9,6 +9,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+
 </head>
 <body>
     <div class="box" data-aos="flip-right">
@@ -43,18 +46,20 @@
                 </ul>
                 <ul id="users"></ul>
             </div>
+
             <div id="rightCol" class="chat-messages"></div>
         </section>
+
         <section id="new-message" class="wrapper">
             <form id="chat-form">
                 <input type="text" placeholder="Enter message" id="msg" autocomplete="off" required>
-                <button class="btn">Submit</button>
+                <button class="btn">Send</button>
             </form>
         </section>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
