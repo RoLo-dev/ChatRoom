@@ -177,7 +177,27 @@ header .title h1{
 .col-menu ion-icon{
     margin-right: 5px;
 }
-#new-message{
+#rightCol .message{
+    border: 2px solid #8BBF9F;
+    border-radius: 8px;
+    color: #242421;
+    /* padding: 2px 8px; */
+}
+#rightCol .message .meta{
+    font-size: 0.75rem;
+    padding-left: 7px;
+    background-color: #8BBF9F;
+    letter-spacing: 1px;
+}
+#rightCol .message .meta span{
+    font-weight: 300;
+    letter-spacing: 0;
+}
+#rightCol .message .message-text{
+    padding: 2px 7px;
+    font-size: 1.1rem;
+}
+#message-form{
     margin-top: 1rem;
 }
 #chat-form{
