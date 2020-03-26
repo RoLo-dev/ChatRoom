@@ -181,10 +181,10 @@ header .title h1{
     border: 2px solid #8BBF9F;
     border-radius: 8px;
     color: #242421;
-    /* padding: 2px 8px; */
+    margin-bottom: 10px;
 }
 #rightCol .message .meta{
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     padding-left: 7px;
     background-color: #8BBF9F;
     letter-spacing: 1px;
@@ -192,10 +192,12 @@ header .title h1{
 #rightCol .message .meta span{
     font-weight: 300;
     letter-spacing: 0;
+    margin-left: 1rem;
 }
 #rightCol .message .message-text{
-    padding: 2px 7px;
-    font-size: 1.1rem;
+    padding: 3px 7px;
+    font-size: 1rem;
+    line-height: 1.25;
 }
 #message-form{
     margin-top: 1rem;
@@ -211,7 +213,7 @@ header .title h1{
     font-family: 'Prompt', sans-serif;
     outline: 0;
     border-radius: 5px;
-    padding-left: 7px;
+    padding: 0 7px;
     background-color: transparent;
     border: 2px solid #242421;
     transition: all 0.4s ease-out;
