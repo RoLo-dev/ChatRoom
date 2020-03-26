@@ -18,12 +18,15 @@ chatForm.addEventListener('submit', (e) => {
 
     const msg = e.target.elements.msg.value;
     socket.emit('chatMessage', msg);
+    e.target.elements.msg.value = '';
+    e.target.elements.msg.focus();
 })
 
 //Output message to DOM
 function outputMessage(message){
     const div = document.createElement('div');
     div.classList.add('message');
+    div.setAttribute('data-aos', 'fade-right');
     div.innerHTML = `<p class="meta bold">Rolando <span>12:35pm</span></p><p class="message-text">${message}</p>`;
     document.querySelector('.chat-messages').appendChild(div);
 }
