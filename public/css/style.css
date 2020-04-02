@@ -170,6 +170,7 @@ header .title h1{
 .chat-main #rightCol{
     border-radius: 7px;
     padding: 1rem;
+    /* background-color: #3c3258 */
     box-shadow: inset -3px -3px 4px rgba(255,255,255,1),
                 inset -3px -3px 7px rgba(255,255,255,0.5),
                 inset 2px 2px 4px rgba(255,255,255,0.1),
