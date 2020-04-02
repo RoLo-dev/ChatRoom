@@ -50,6 +50,7 @@ header .title ion-icon{
 header .title h1{
     letter-spacing: 1px;
     background: -webkit-linear-gradient(45deg, #ffa355, #fa6d6e,#fa6d6e);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
