@@ -11,6 +11,9 @@ const {username, room} = Qs.parse(location.search, {
 });
 console.log(`name: ${username} | room: ${room}`);
 
+// Join chatapp
+socket.emit('joinRoom', {username, room});
+
 // Messages from server
 socket.on('message', message => {
     console.log(message);
