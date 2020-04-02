@@ -27,6 +27,6 @@ function outputMessage(message){
     const div = document.createElement('div');
     div.classList.add('message');
     div.setAttribute('data-aos', 'fade-right');
-    div.innerHTML = `<p class="meta bold">Rolando <span>12:35pm</span></p><p class="message-text">${message}</p>`;
+    div.innerHTML = `<p class="user bold">Rolando <span>12:35pm</span></p><p class="message-text">${message}</p>`;
     document.querySelector('.chat-messages').appendChild(div);
 }
