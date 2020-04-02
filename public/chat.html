@@ -27,24 +27,19 @@
 
         <section class="chat-main wrapper">
             <div id="leftCol">
-                <ul>
-                    <li>
-                        <div class="col-menu">
-                            <ion-icon name="chatbubbles-outline"></ion-icon>
-                            <p>Room name:</p>
-                        </div>
-                    </li>
-                    <li>
-                        <p id="room-name"></p>
-                    </li>
-                    <li>
-                        <div class="col-menu">
-                            <ion-icon name="people-outline"></ion-icon>
-                            <p>Users:</p>
-                        </div>
-                    </li>
-                </ul>
+
+                <div class="col-menu">
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                    <p>Room name:</p>
+                </div>
+                <p id="room-name"></p>
+
+                <div id="user-container" class="col-menu">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <p>Users:</p>
+                </div>
                 <ul id="users"></ul>
+
             </div>
 
             <div id="rightCol" class="chat-messages">

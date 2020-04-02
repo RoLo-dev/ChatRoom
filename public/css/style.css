@@ -25,6 +25,9 @@ html{
     height: 100vh;
     background: linear-gradient(to right, rgba(255,163,85,1), rgba(250,109,110,1));
 }
+ul li{
+    list-style: none;
+}
 .wrapper{
     width: 90%;
     margin: 0 auto;
@@ -177,16 +180,21 @@ header .title h1{
     overflow-y: scroll;
     height: 100%;
 }
-#leftCol ul li{
-    list-style: none;
-    margin-bottom: 10px;
-}
-#leftCol ul li:last-child{
-    margin-bottom: 0;
-}
-#leftCol ul li .col-menu{
+#leftCol .col-menu{
     display: flex;
     align-items: center;
+    margin-bottom: 7px;
+}
+#leftCol #room-name{
+    padding: 2px auto;
+    background-color: #1f1c3b;
+    color: #F2F3F7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+#leftCol #user-container{
+    margin-top: 0.5rem;
 }
 .col-menu ion-icon{
     margin-right: 5px;

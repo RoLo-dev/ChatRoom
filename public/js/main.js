@@ -4,6 +4,8 @@ AOS.init({
 const chatForm = document.getElementById('chat-form');
 const chatMessages = document.querySelector('.chat-messages');
 const socket = io();
+const roomName = document.getElementById('room-name');
+const allUsers = document.getElementById('users');
 
 // Get username and chat room from URL
 const {username, room} = Qs.parse(location.search, {
@@ -11,8 +13,14 @@ const {username, room} = Qs.parse(location.search, {
 });
 console.log(`name: ${username} | room: ${room}`);
 
-// Join chatapp
+// Join ChatApp
 socket.emit('joinRoom', {username, room});
+
+// Get room and users
+socket.on('roomUsers', ({room, users}) => {
+    outputRoomName(room);
+    outputUsers(users);
+});
 
 // Messages from server
 socket.on('message', message => {
@@ -41,4 +49,14 @@ function outputMessage(message){
         ${message.text}
     </p>`;
     document.querySelector('.chat-messages').appendChild(div);
+}
+
+// Add room name to DOM
+function outputRoomName(room){
+    roomName.innerText = room;
+}
+// Add users to DOM
+function outputUsers(users){
+    allUsers.innerHTML = `
+        ${users.map(user => `<li>${user.username}</li>`).join('')}`;
 }
