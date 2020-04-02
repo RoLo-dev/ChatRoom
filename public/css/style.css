@@ -72,7 +72,7 @@ header .title h1{
     color: #242421;
     font-size: 0.9rem;
     padding-left: 10px;
-    border-radius: 8px;
+    border-radius: 5px;
     transition: all 0.4s ease-out;
 }
 .main form input::placeholder{
@@ -96,22 +96,24 @@ header .title h1{
 .main form #select-room:hover{
     cursor: pointer;
 }
-.submit-btn{
-    color: #F2F3F7 !important;
-    padding-left: 0 !important;
-    border: 2px solid #8BBF9F !important;
-    background-color: #8BBF9F !important;
+#submit-btn{
+    width: 35%;
+    border-radius: 25px;
+    color: #F2F3F7;
+    padding-left: 0;
+    border: 2px solid #8BBF9F;
+    background-color: #8BBF9F;
     font-weight: 700;
     letter-spacing: 1px;
 }
-.submit-btn:hover,
-.submit-btn:focus{
+#submit-btn:hover,
+#submit-btn:focus{
     cursor: pointer;
-    color: #8BBF9F !important;
-    background-color: transparent !important;
+    color: #8BBF9F;
+    background-color: transparent;
     transition: all 0.3s ease-in;
 }
-.submit-btn:active{
+#submit-btn:active{
     transform: scale(0.98);
 }
 
@@ -237,7 +239,7 @@ header .title h1{
     border: 2px solid #8BBF9F;
     background-color: #8BBF9F;
     color: #F2F3F7;
-    border-radius: 7px;
+    border-radius: 5px;
     font-size: 1rem;
     font-family: 'Prompt', sans-serif;
     transition: all 0.5s ease-out;
