@@ -70,9 +70,6 @@ header .title h1{
     height: 600px;
     background-color: #F2F3F7;
 }
-.main form>*{
-    margin-bottom: 12px;
-}
 .main form{
     margin-top: 5rem;
     width: 100%;
@@ -84,6 +81,7 @@ header .title h1{
     font-family: 'Prompt', sans-serif;
     background-color: transparent;
     border: 2px solid #1f1c3b;
+    margin-bottom: 1rem;
     outline: 0;
     color: #1f1c3b;
     font-size: 0.9rem;
@@ -111,6 +109,12 @@ header .title h1{
 }
 .main form #select-room:hover{
     cursor: pointer;
+}
+.main form #select-room:required:invalid{
+    color: rgba(31, 28, 59, 0.5);
+}
+.main form #select-room option{
+    color: #1f1c3b;
 }
 #submit-btn{
     width: 35%;

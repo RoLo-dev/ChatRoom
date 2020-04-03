@@ -26,10 +26,10 @@
         <section class="wrapper main">
             <form action="chat.html">
                 <label for="username">Enter your name</label>
-                <input type="text" name="username" id="username" placeholder="Enter your name">
+                <input type="text" name="username" id="username" placeholder="Enter your name" required>
                 <label for="room">Select chat room</label>
-                <select name="room" id="select-room">
-                    <option value="0">-- Select --</option>
+                <select name="room" id="select-room" required>
+                    <option value="" disabled selected hidden>-- Select --</option>
                     <option value="Coding">Coding</option>
                     <option value="Gaming">Gaming</option>
                     <option value="Music">Music</option>
